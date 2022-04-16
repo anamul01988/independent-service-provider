@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Nursing Facility",
+        "id": 1,
+        "description":"I can manage and provide best sister for Nursing. Now, Home service are providing on special 30% discount",
+        "img":"https://images.unsplash.com/photo-1643297654416-05795d62e39c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=553&q=80",
+        "price": 3333
+    },
+    {
+        "name":"Dental Facility",
+        "id": 2,
+        "description":"Here, some special detist create an platform for providing treatment to disorder people.",
+        "img":"https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": 5433
+    },
+    {
+        "name":"Pharmacy Facility",
+        "id": 3,
+        "description":"pharmacy facility will provide on 20% discount. Now, Home service are providing very fastly.",
+        "img":"https://images.unsplash.com/photo-1580281657527-47f249e8f4df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": 6776
+    },
+    {
+        "name":"Blood Test Facility",
+        "id": 4,
+        "description":"pharmacy facility will provide on 20% discount. Now, Home service are providing very fastly.",
+        "img":"https://images.unsplash.com/photo-1615461066159-fea0960485d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1016&q=80",
+        "price": 6776
+    },
+    {
+        "name":"24/7 Ambulance Facility",
+        "id": 5,
+        "description":"Ambulance facility will provide on 10% discount. Now, Home service are providing very fastly.",
+        "img":"https://images.unsplash.com/photo-1587745416684-47953f16f02f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=808&q=80",
+        "price": 3333
+    },
+    {
+        "name":"Emergency Care",
+        "id": 6,
+        "description":"Emergency Care facility is an indispensable part for our lives . Recently, i am providing this facility for helping poor peaple.",
+        "img":"https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": 2222
+    }
+]
