@@ -1,0 +1,25 @@
+.service-content h5 {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: capitalize;
+}
+
+.service-content h2 {
+  font-size: 46px;
+  line-height: 44px; /* color: orangered; */
+  color: #111010;
+  font-family: "roboto" sans-serif;
+  font-family: "" Roboto "";
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+}
+
+.service-content p {
+  font-family: 23px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 15px;
+  color: #5c5656;
+}

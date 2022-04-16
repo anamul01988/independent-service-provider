@@ -1,9 +1,11 @@
 import React from 'react';
 import './Home.css';
 import home from '../../asset/home.png'
+import Service from '../Service/Service';
 const Home = () => {
     return (
-        <div className='container-full home'>
+      <>
+         <div className='container-full home'>
            <div className="container py-3">
                <div className="row">
                    <div className="col-md-6 col-12">
@@ -26,7 +28,11 @@ const Home = () => {
                    </div>
                </div>
            </div>
+   
         </div>
+
+        <Service/>
+      </>
     );
 };
 

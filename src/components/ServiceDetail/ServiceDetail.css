@@ -1,0 +1,26 @@
+.cart{
+    height: 600px;
+    /* position: relative; */
+}
+/* .cart.btn::before{
+   position: absolute;
+   bottom: 0;
+
+} */
+.price{
+    font-size: 32px;
+    color: rgb(108, 86, 7);
+}
+.title{
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.description{
+    font-size: 18px;
+    font-family: 'poppins',sans-serif;
+    color: rgb(148, 144, 144);
+    line-height: 28px;
+    font-weight: 400;
+}
