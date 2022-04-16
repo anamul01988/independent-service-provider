@@ -7,7 +7,7 @@ import logo from '../../../asset/logo.png';
 const Header = () => {
     return (
         <div className="container mt-2">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
               <NavLink to="/navbar" >
                   <img className="logo link" src={logo} alt="logo"  /> 

@@ -1,0 +1,57 @@
+.home {
+  background-image: url("../../asset/Generic-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh; */
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.home::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+.home-content {
+  padding: 100px 0;
+  color: white;
+}
+.home-content h2 {
+  color: rgb(244, 240, 240);
+  font-size: 58px;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 64px;
+}
+
+.home-content h3 {
+  font-size: 48px;
+  /* color: #dbe5ed; */
+  color: orange;
+  line-height: 64px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.home-content h4 {
+  color: #bbbfc2;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.btn{
+    background-color: yellow;
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
