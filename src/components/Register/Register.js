@@ -11,9 +11,9 @@ const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
-        error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+        loading
+       
+      ] = useCreateUserWithEmailAndPassword(auth,  {sendEmailVerification: true});
       const [updateProfile, updating] = useUpdateProfile(auth);
 
       if(loading ||updating ){
@@ -34,7 +34,7 @@ const Register = () => {
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
         console.log('Updated profile');
-        navigate('/home');
+        navigate('/');
       }
     return (
         <div className='register-form my-5'>
@@ -46,7 +46,6 @@ const Register = () => {
         
             <input type="password" name='password' id='' placeholder='password' required />
             <input onClick={() => setAgree(!agree)}  type="checkbox" name="terms" id="terms" />
-            {/* <label className={agree ? ' ps-2 text-primary' : ' ps-2 text-danger'} htmlFor="terms">Accept terms & condition</label> */}
             <label className={`ps-2 ${agree? '': 'text-danger'}`} htmlFor="terms">Accept terms & condition</label>
             <input disabled={!agree}  className='w-50 mx-auto btn btn-primary mt-2' type="submit" value='Register' />
         </form>

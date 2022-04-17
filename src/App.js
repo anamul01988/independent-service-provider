@@ -13,6 +13,7 @@ import Proceed from './components/Proceed/Proceed';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Protected from './components/Protected/Protected';
+import NotFoundUrl from './components/NotFoundUrl/NotFoundUrl';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/about" element = {<AboutMe/>} />
             <Route path="/login" element = {<Login/>} />
             <Route path="/register" element = {<Register/>} />
+            <Route path="*" element = {<NotFoundUrl/>} />
         </Routes>
         <Footer/>
     </div>
