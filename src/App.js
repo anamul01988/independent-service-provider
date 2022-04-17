@@ -11,6 +11,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Proceed from './components/Proceed/Proceed';
 import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/blog" element = {<Blog/>} />
             <Route path="/about" element = {<AboutMe/>} />
             <Route path="/login" element = {<Login/>} />
+            <Route path="/register" element = {<Register/>} />
         </Routes>
         <Footer/>
     </div>
