@@ -20,6 +20,7 @@ function App() {
         <Header/>
         <Routes>
             <Route path="/" element = {<Home/>} />
+            <Route path="/home" element = {<Home/>} />
             <Route path="/service" element = {<Service/>} />
             <Route path="/service/:serviceId" element = {<CheckOut/>} />
 
