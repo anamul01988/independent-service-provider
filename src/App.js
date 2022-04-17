@@ -10,6 +10,7 @@ import Footer from './components/Shared/Footer/Footer';
 import CheckOut from './components/CheckOut/CheckOut';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Proceed from './components/Proceed/Proceed';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/proceed" element = {<Proceed/>} />
             <Route path="/blog" element = {<Blog/>} />
             <Route path="/about" element = {<AboutMe/>} />
+            <Route path="/login" element = {<Login/>} />
         </Routes>
         <Footer/>
     </div>
