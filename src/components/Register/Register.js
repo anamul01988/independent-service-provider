@@ -1,11 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 import './Register.css';
 const Register = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useCreateUserWithEmailAndPassword(auth);
+      if(user){
+        navigate('/');
+        console.log('user', user)
+    }
+      const handleRegisterForm = (event) =>{
+        event.preventDefault();
+        // console.log(event.target.email.value)
+        // console.log(event.target.password.value)
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+          const agree = event.target.terms.checked;
+        if(agree){
+            createUserWithEmailAndPassword( email, password);
+        }
+      }
     return (
         <div className='register-form my-5'>
         <h3 className='mb-3' style={{textAlign: 'center'}}>Please Register. </h3>
-        <form  action="">
+        <form onSubmit={handleRegisterForm}  action="">
             <input type="text" name='name' id='' placeholder='your name' />
      
             <input type="email" name='email' id='' placeholder='email address' required />
