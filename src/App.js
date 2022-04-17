@@ -12,6 +12,7 @@ import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Proceed from './components/Proceed/Proceed';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Protected from './components/Protected/Protected';
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
             <Route path="/service" element = {<Service/>} />
             <Route path="/service/:serviceId" element = {<CheckOut/>} />
 
-            <Route path="/checkout" element = {<CheckOut/>} />
+            <Route path="/checkout" element = {
+               <Protected>
+                    <CheckOut/>
+               </Protected>
+            } />
             <Route path="/proceed" element = {<Proceed/>} />
             <Route path="/blog" element = {<Blog/>} />
             <Route path="/about" element = {<AboutMe/>} />

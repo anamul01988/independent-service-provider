@@ -2,9 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import './Header.css';
 import logo from '../../../asset/logo.png';
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
 // import { Container, Nav, Navbar, NavDropdown, NavLink } from "react-bootstrap";
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const handleSignOut = () =>{
+    signOut(auth);
+  }
     return (
         <div className="container mt-2">
           <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -42,11 +49,11 @@ const Header = () => {
                        Checkout
                     </NavLink>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <NavLink to="/proceed" className={({ isActive }) => (isActive ? "active-link" : "link" )} aria-current="page" >
                        Shipment
                     </NavLink>
-                  </li>
+                  </li> */}
                 
                   <li className="nav-item">
                     <NavLink to="/blog" className={({ isActive }) => (isActive ? "active-link" : "link" )}>Blog</NavLink>
@@ -55,9 +62,20 @@ const Header = () => {
                   <li className="nav-item">
                     <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "link" )}>About Me</NavLink>
                   </li>
-                  <li className="nav-item">
+
+                  {
+                    user?
+                    // <button className='btn btn-link text-light text-decoration-none' onClick={handleSignOut}>sign out</button>
+                    <li className="nav-item">
+                    <NavLink onClick={handleSignOut} to="" className="link">Sign Out</NavLink>
+                  </li>
+                    :
+                    <li className="nav-item">
                     <NavLink to="/login" className={({ isActive }) => (isActive ? "active-link" : "link" )}>Login</NavLink>
                   </li>
+                  
+                  }
+
                   <li className="nav-item">
                     <NavLink to="/register" className={({ isActive }) => (isActive ? "active-link" : "link" )}>Register</NavLink>
                   </li>
