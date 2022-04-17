@@ -1,10 +1,16 @@
 // import { Button } from 'bootstrap';
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import './ServiceDetail.css';
 const ServiceDetail = ({ service }) => {
+  const navigate = useNavigate();
   const { img, name, description, id, price } = service;
-  console.log(service);
+  // console.log(service);
+  const navigateToServiceDetail = (id)=>{
+    console.log('added',id,service)
+    navigate(`/service/${id}`)
+  }
   return (
     <div className="col-md-6 col-lg-4 col-12">
       {/* <h2>{service.name}</h2> */}
@@ -14,7 +20,7 @@ const ServiceDetail = ({ service }) => {
           <Card.Title className="title">{name}</Card.Title>
           <Card.Text className="description">{description}</Card.Text>
           <Card.Text className=" price" >${price}</Card.Text>
-          <Button className="w-100 btn" variant="primary">Add To Cart</Button>
+          <Button onClick={()=>navigateToServiceDetail(id,service)} className="w-100 btn" variant="primary">Add To Cart</Button>
         </Card.Body>
       </Card>
     </div>

@@ -6,6 +6,10 @@ import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
 import AboutMe from './components/AboutMe/AboutMe';
 import Service from './components/Service/Service';
+import Footer from './components/Shared/Footer/Footer';
+import CheckOut from './components/CheckOut/CheckOut';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+import Proceed from './components/Proceed/Proceed';
 
 function App() {
   return (
@@ -14,9 +18,14 @@ function App() {
         <Routes>
             <Route path="/" element = {<Home/>} />
             <Route path="/service" element = {<Service/>} />
+            <Route path="/service/:serviceId" element = {<CheckOut/>} />
+
+            <Route path="/checkout" element = {<CheckOut/>} />
+            <Route path="/proceed" element = {<Proceed/>} />
             <Route path="/blog" element = {<Blog/>} />
             <Route path="/about" element = {<AboutMe/>} />
         </Routes>
+        <Footer/>
     </div>
   );
 }

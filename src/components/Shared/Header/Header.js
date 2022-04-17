@@ -37,6 +37,16 @@ const Header = () => {
                       Service
                     </NavLink>
                   </li>
+                  <li className="nav-item">
+                    <NavLink to="/checkout" className={({ isActive }) => (isActive ? "active-link" : "link" )} aria-current="page" >
+                       Checkout
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink to="/proceed" className={({ isActive }) => (isActive ? "active-link" : "link" )} aria-current="page" >
+                       Shipment
+                    </NavLink>
+                  </li>
                 
                   <li className="nav-item">
                     <NavLink to="/blog" className={({ isActive }) => (isActive ? "active-link" : "link" )}>Blog</NavLink>
