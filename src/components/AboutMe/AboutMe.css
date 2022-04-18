@@ -1,0 +1,23 @@
+.about .img {
+  height: 300px;
+}
+.card-title.h5 {
+  font-size: 24px;
+  font-family: "Poppins"; 
+  line-height: 36px;
+}
+
+p.card-text {
+  font-size: 16px;
+  font-family: "roboto",sans-serif;
+  line-height: 25px;
+}
+
+button.btn.btn-secondary {
+  font-size: 17px;
+  transition: .7s;
+}
+button.btn.btn-secondary:hover{
+    background-color: orange;
+    color: black;
+}
