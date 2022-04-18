@@ -70,7 +70,7 @@ const Satisfiction = () => {
             </button>
           </div>
           </div>
-          <button className="btn">Review & testimonial</button>
+          <button className="btn mt-3">Review & testimonial</button>
         </div>
       </div>
     </div>

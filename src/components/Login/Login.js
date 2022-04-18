@@ -54,7 +54,7 @@ const Login = () => {
   return (
     <div className="container my-5 ">
       <h3 className="text-secondary text-center mt-3">Please login.</h3>
-      <Form onSubmit={handleSubmit} className="w-50 mx-auto">
+      <Form onSubmit={handleSubmit} className="login-form mx-auto">
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -77,7 +77,7 @@ const Login = () => {
         {errorElement}
         <div className="login-content d-flex justify-content-between align-item-center">
  
-          <p>
+          <p className="mt-1">
             New User?{" "}
             <Link
               to="/register"
@@ -89,14 +89,13 @@ const Login = () => {
           <p>
             Forget Password?{" "}
             <Button
-              // className="btn btn-link text-dark pointer-cursor pe-auto text-decoration-none "
               onClick={resetPassword}
             >
               Reset Password
             </Button>
           </p>
         </div>
-        <Button className="w-50 mx-auto d-block my-4 bg-warning text-dark " type="submit">
+        <Button className="login-btn  mx-auto d-block my-4 bg-warning text-dark " type="submit">
           Login
         </Button>
         <SocialLogin />

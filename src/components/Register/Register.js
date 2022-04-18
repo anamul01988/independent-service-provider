@@ -37,7 +37,8 @@ const Register = () => {
         navigate('/');
       }
     return (
-        <div className='register-form my-5'>
+       <div className="container">
+             <div className='register-form my-5'>
         <h3 className='mb-3' style={{textAlign: 'center'}}>Registration Form. </h3>
         <form onSubmit={handleRegisterForm}  action="">
             <input type="text" name='name' id='' placeholder='your name' required />
@@ -53,6 +54,7 @@ const Register = () => {
         <SocialLogin/>
 
     </div>
+       </div>
     );
 };
 
