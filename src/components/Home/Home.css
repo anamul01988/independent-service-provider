@@ -47,6 +47,15 @@
   line-height: 32px;
   font-weight: 700;
 }
+/* .home-content-img img {
+  width: 100%;
+  height: auto;
+} */
+.home-content-img img:hover{
+  transition: .3s ease-in;
+  transform: rotateY(40deg);
+  transform-origin: center;
+}
 .btn{
     background-color: yellow;
     color: black;

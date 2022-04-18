@@ -24,7 +24,7 @@ const Home = () => {
                       </div>
 
                    </div>
-                   <div className="col-md-6 col-12 my-3">
+                   <div className="col-md-6 col-12 my-3 home-content-img">
                        <img src={home} alt="" />
                    </div>
                </div>

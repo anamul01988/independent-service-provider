@@ -9,7 +9,7 @@ const ServiceDetail = ({ service }) => {
   // console.log(service);
   const navigateToServiceDetail = (id)=>{
     console.log('added',id,service)
-    navigate(`/service/${id}`)
+    navigate(`/checkout/${id}`)
   }
   return (
     <div className="col-md-6 col-lg-4 col-12">
