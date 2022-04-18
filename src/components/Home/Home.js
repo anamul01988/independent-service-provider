@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import home from '../../asset/home.png'
 import Service from '../Service/Service';
+import Satisfiction from '../Satisfiction/Satisfiction';
 const Home = () => {
     return (
       <>
@@ -32,6 +33,7 @@ const Home = () => {
         </div>
 
         <Service/>
+        <Satisfiction/>
       </>
     );
 };
