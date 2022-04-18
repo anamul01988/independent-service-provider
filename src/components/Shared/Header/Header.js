@@ -13,14 +13,16 @@ const Header = () => {
     signOut(auth);
   }
     return (
-        <div className="container mt-2">
+       <div className="container-full bg-light">
+           <div className="container mt-2">
           <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
+            <div className="container-fluid header">
               <NavLink to="/navbar" >
-                  <img className="logo link" src={logo} alt="logo"  /> 
-                  <span className=" title">Medical Informatics</span>
+                  <img className="logo" src={logo} alt="logo"  /> 
+                  <span className=" header-title">Medical Informatics</span>
                  
               </NavLink>
+
               <button
                 className="navbar-toggler"
                 type="button"
@@ -85,6 +87,7 @@ const Header = () => {
             </div>
           </nav>
         </div>
+       </div>
       );
 };
 

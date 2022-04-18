@@ -8,6 +8,7 @@ const AboutMe = () => {
       <Card style={{ width: "20rem" }} className="shadow rounded p-3">
         <Card.Img className="img" variant="top" src={pic}  />
         <Card.Body>
+        <Card.Title>Name: Anamul Haque</Card.Title>
           <Card.Title>My Goal</Card.Title>
           <Card.Text>
             I would like to be a full Stack Web Developer. Now i am working with front end developer on react. I just trying to boost my skill on programming. I have been working hard so that i can be a entrepreneur in It sector.

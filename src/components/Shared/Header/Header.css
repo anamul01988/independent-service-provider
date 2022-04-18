@@ -17,14 +17,16 @@
     color: #000;
     transition: color ease-in-out 300ms;
   }
-  .title{
+ .header .header-title{
    
     margin-left: 15px;
+    font-size:20px;
     font-family: 'Poppins',sans-serif;
-    font-size: 18px;
     font-weight: 500;
     color: #000;
     transition: color ease-in-out 300ms;
+    letter-spacing: .9px;
+  
   }
   a {
    
