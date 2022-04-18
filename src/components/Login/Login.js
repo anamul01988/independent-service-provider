@@ -74,8 +74,9 @@ const Login = () => {
             placeholder="password"
           />
         </Form.Group>
+        {errorElement}
         <div className="login-content d-flex justify-content-between align-item-center">
-          {errorElement}
+ 
           <p>
             New User?{" "}
             <Link
@@ -98,11 +99,9 @@ const Login = () => {
         <Button className="w-50 mx-auto d-block my-4 bg-warning text-dark " type="submit">
           Login
         </Button>
+        <SocialLogin />
       </Form>
-      {/* {errorElement}
-      <p>New User? <Link to='/register' className="text-primary pointer-cursor pe-auto text-decoration-none" >Please Register</Link></p>
-      <p>Forget Password? <Button className=" btn btn-link text-dark pointer-cursor pe-auto text-decoration-none" onClick={resetPassword} >Reset Password</Button></p> */}
-      <SocialLogin />
+     
       <ToastContainer />
     </div>
   );

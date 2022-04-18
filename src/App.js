@@ -23,7 +23,11 @@ function App() {
             <Route path="/" element = {<Home/>} />
             <Route path="/home" element = {<Home/>} />
             <Route path="/service" element = {<Service/>} />
-            <Route path="/service/:serviceId" element = {<CheckOut/>} />
+            <Route path="/service/:serviceId" element = {
+              <Protected>
+                 <CheckOut/>
+              </Protected>
+            } />
 
             <Route path="/checkout" element = {
                <Protected>
