@@ -1,0 +1,12 @@
+.login-content p{
+    font-size: 17px;
+}
+.login-content p button{
+    font-size: 14px;
+    transition: .3s ease-in;
+}
+.login-content p button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
